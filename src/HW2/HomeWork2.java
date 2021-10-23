@@ -19,21 +19,17 @@ public class HomeWork2 {
         System.out.println("*********************************");
         System.out.println("Result method print: ");
         numberOfWords("Привет", 10);
-
     }
 
-
     public static boolean sum(int a, int b) {
-
         int sum = a + b;
-
         return sum >= 10 && sum <= 20;
     }
 
     public static void positiveNegative(int a) {
         if (a < 0) {
             System.out.println("Число отрицательное");
-        } else  {
+        } else {
             System.out.println("Число положительное");
         }
     }
