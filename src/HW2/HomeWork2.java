@@ -27,20 +27,19 @@ public class HomeWork2 {
 
         int sum = a + b;
 
-        if (sum >= 10 || sum <= 20) {
+        if (sum >= 10 && sum <= 20) {
             return true;
         } else {
             return false;
         }
     }
 
-    public static int positiveNegative(int a) {
+    public static void positiveNegative(int a) {
         if (a < 0) {
             System.out.println("Число отрицаткльное");
-        } else if (a >= 0) {
+        } else  {
             System.out.println("Число положительное");
         }
-        return a;
     }
 
     public static boolean evenOdd(int a) {
@@ -48,15 +47,12 @@ public class HomeWork2 {
             return true;
         } else
             return false;
-
-
     }
 
-    public static String print(String c, int a) {
+    public static void print(String c, int a) {
         for (int i = 0; i <= a; i++) {
             System.out.println(c);
         }
-        return c;
     }
 
     public static boolean leapYear(int year) {
