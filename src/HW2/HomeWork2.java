@@ -15,10 +15,10 @@ public class HomeWork2 {
         System.out.println("Result method positiveNegative: ");
         positiveNegative(0);
         System.out.println("*********************************");
-        System.out.println("Result method evenOdd: " + evenOdd(10));
+        System.out.println("Result method evenOdd: " + negativePositive(10));
         System.out.println("*********************************");
         System.out.println("Result method print: ");
-        print("Привет", 10);
+        numberOfWords("Привет", 10);
 
     }
 
@@ -27,41 +27,30 @@ public class HomeWork2 {
 
         int sum = a + b;
 
-        if (sum >= 10 && sum <= 20) {
-            return true;
-        } else {
-            return false;
-        }
+        return sum >= 10 && sum <= 20;
     }
 
     public static void positiveNegative(int a) {
         if (a < 0) {
-            System.out.println("Число отрицаткльное");
+            System.out.println("Число отрицательное");
         } else  {
             System.out.println("Число положительное");
         }
     }
 
-    public static boolean evenOdd(int a) {
-        if (a < 0) {
-            return true;
-        } else
-            return false;
+    public static boolean negativePositive(int a) {
+        return a < 0;
     }
 
-    public static void print(String c, int a) {
+    public static void numberOfWords(String c, int a) {
         for (int i = 0; i <= a; i++) {
             System.out.println(c);
         }
     }
 
     public static boolean leapYear(int year) {
-        if (year % 4 == 0 || year % 400 == 0) {
-            return true;
-        } else if (year % 4 != 0 || year % 100 == 0) {
-            return false;
-        }
-        return true;
+        return year % 4 == 0 && year % 400 == 0 || year % 100 != 0;
+
     }
 }
 
