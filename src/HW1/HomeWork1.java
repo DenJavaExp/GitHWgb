@@ -1,3 +1,5 @@
+package HW1;
+
 public class HomeWork1 {
 
         public static void main(String[] args) {
@@ -5,6 +7,7 @@ public class HomeWork1 {
             checkSumSign();
             printColor();
             compareNumbers();
+
 
         }
 
@@ -45,6 +48,9 @@ public class HomeWork1 {
                 System.out.println("a < b");
             }
         }
+
+
     }
+
 
 
