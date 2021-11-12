@@ -9,7 +9,7 @@ public class Person {
     private double salary;
     private int age;
 
-
+    @Override
     public String toString() {
         return "Name: " + name + "\n" + "Post: "
                 + post + "\n" + "email: " + email + "\n"
